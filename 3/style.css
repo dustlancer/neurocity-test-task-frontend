@@ -1,0 +1,19 @@
+.player {
+    display: inline;
+    position: relative;
+    max-width: 300px;
+}
+
+.player video {
+    width: 100%;
+}
+#timeDisplay {
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+}

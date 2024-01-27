@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#square {
+    width: 150px;
+    height: 150px;
+    border: solid 10px green;
+}
+
+#square.animate {
+    animation: pulse 500ms ease-in-out;
+}
+
+
+
+#rectangle {
+    width: 250px;
+    height: 150px;
+    border: solid 10px green;
+}
+
+#rectangle.animate {
+    animation: rotate 500ms ease-in-out;
+}
+
+#triangle { 
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid green;
+}
+
+#triangle.animate {
+    animation: move 1000ms ease-in-out;
+}
+
+#circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: solid 10px green;
+}
+
+
+#circle.animate {
+    animation: rotate3D 1000ms ease-in-out;
+}
+
+
+
+@keyframes pulse{
+    0% {
+        box-shadow: green 0 0 0 0;
+    }
+    100% {
+        box-shadow:#ff69b400 0 0 0 16px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes rotate3D {
+    0% {
+        transform: rotate3d(0,0,0,0);
+    }
+    100% {
+        transform: rotate3d(1,1,0, 180deg)
+    }
+}

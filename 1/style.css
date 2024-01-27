@@ -1,0 +1,41 @@
+
+
+
+#slider {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: solid 1px lightgray;
+}
+
+
+
+#slider img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+#slider button {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color: lightgray;
+    font-size: 40px;
+    transition: scale .5s ease-in;
+}
+
+
+#nextButton {
+    right: 5px;    
+}
+
+#prevButton {
+    left: 5px
+}

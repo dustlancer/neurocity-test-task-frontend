@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="registerForm">
+            <div class="form-item">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name">
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-item">
+                <label for="phone">Телефон</label>
+                <input type="text" id="phone" name="phone">
+                <span class="error-message" id="phoneError"></span>
+            </div>
+            <div class="form-item">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-item">
+                <label for="confirmPassword">Повторите пароль</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+                <span class="error-message" id="passwordError"></span>
+            </div>
+            <div class="form-footer">
+                <input type="submit" value="Зарегистрироваться" onclick="validateRegisterForm(event)">
+            </div>
+        </form>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
